@@ -1,0 +1,10 @@
+[Unit]
+Description=Example Web Books
+
+[Service]
+	
+ExecStart=java -jar /home/babantar/Documents/GitHub/DevOps-Lea/2025-07-example-main/apps/webbooks/target/*.jar
+ReStart=java -jar /home/babantar/Documents/GitHub/DevOps-Lea/2025-07-example-main/apps/webbooks/target/*.jar
+
+[Install]
+WantedBy=multi-user.target
